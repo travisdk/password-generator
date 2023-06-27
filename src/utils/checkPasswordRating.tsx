@@ -6,7 +6,6 @@ export type StrengthRatingResult = {
   length: number;
 };
 const checkPasswordRating = (password: string): StrengthRatingResult => {
-  console.log("checkPasswordRating called");
   return passwordStrength(password) as StrengthRatingResult;
 };
 

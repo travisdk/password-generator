@@ -52,11 +52,27 @@ const PasswordGenerator = () => {
         />
         <StrengthIndicator password={currentPassword} />
         <button
+          className="password-generate-button"
           disabled={possibleChars.length === 0}
           onClick={() =>
             setCurrentPassword(generatePassword(possibleChars, characterLength))
           }>
-          GENERATE =
+          GENERATE
+          <span className="arrow">
+            <svg
+              width="11.105347px"
+              height="12px"
+              viewBox="0 0 11.105347 12"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.99994 0L0 5.99998L5.99994 12L7.26496 10.735L3.42447 6.89453L11.1054 6.89453L11.1054 5.1054L3.42447 5.1054L7.26496 1.26495L5.99994 0L5.99994 0Z"
+                id="Shape"
+                fill="#24232C"
+                stroke="none"
+              />
+            </svg>
+          </span>
         </button>
       </div>
     </div>

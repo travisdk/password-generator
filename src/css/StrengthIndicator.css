@@ -1,0 +1,28 @@
+.strengthindicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+.strengthvalue {
+  margin: 0 1em;
+  font-size: 18px;
+}
+.strengthbar {
+  border: 2px solid var(--ALMOST_WHITE);
+  width: 10px;
+  height: 28px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.filled {
+  border: none;
+}
+
+.strengthindicator h3 {
+  color: var(--GREY);
+}
+.strengthvalue-and-bars {
+  display: flex;
+  align-items: center;
+}

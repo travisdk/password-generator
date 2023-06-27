@@ -93,7 +93,6 @@ input[type="range"]::-moz-range-thumb {
   width: var(--SLIDER_THUMB_SIZE);
   border-radius: 50%;
   background: var(--ALMOST_WHITE);
-
   margin-top: var(--THUMB_Y_ADJUST);
 }
 /* input[type="range"]:focus::-moz-range-track {
@@ -102,4 +101,19 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-moz-range-progress {
   background-color: var(--NEON_GREEN);
   height: var(--TRACK_HEIGHT);
+}
+
+.password-generate-button {
+  width: 100%;
+  height: 56px;
+  background-color: var(--NEON_GREEN);
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--DARK_GREY);
+}
+.arrow {
+  margin-left: 1em;
+}
+.arrow svg {
+  transform: rotate(180deg);
 }

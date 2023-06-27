@@ -1,3 +1,5 @@
+import "../css/CheckBox.css";
+
 type CheckBoxProps = {
   name: string;
   charRangeSelector: boolean;
@@ -6,8 +8,9 @@ type CheckBoxProps = {
 
 const CheckBox = ({ name, charRangeSelector, handleChange }: CheckBoxProps) => {
   return (
-    <div className="checkbox">
+    <div className="checkbox-and-label">
       <input
+        className="custom-checkbox"
         type="checkbox"
         id={name}
         checked={charRangeSelector}
