@@ -1,0 +1,105 @@
+:root {
+  /* color variables */
+
+  --RED: #f64a4a;
+  --ORANGE: #fb7c58;
+  --YELLOW: #f8cd65;
+  --NEON_GREEN: #a4ffaf;
+  --ALMOST_WHITE: #e6e5ea;
+  --GREY: #817d92;
+  --DARK_GREY: #24232c;
+  --VERY_DARK_GREY: #18171f;
+
+  /* sizing variables */
+
+  --DEFAULT_SPACING: 16px;
+
+  --SLIDER_THUMB_SIZE: 23px;
+  --TRACK_HEIGHT: 8px;
+  --SLIDER_WIDTH: 100%;
+  --THUMB_Y_ADJUST: -8px;
+
+  /* Progress percentage - for controlling the progress color on range input in webkit browsers */
+  --PROGRESS_PCT: 0;
+}
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "JetBrains Mono";
+  background-color: var(--VERY_DARK_GREY);
+  color: var(--ALMOST_WHITE);
+}
+
+/* customizing range input sliders */
+
+/* resetting default styles */
+input[type="range"] {
+  width: var(--SLIDER_WIDTH);
+  -webkit-appearance: none;
+  background: transparent;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* Chrome, Safari */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: var(--SLIDER_WIDTH);
+  height: var(--TRACK_HEIGHT);
+
+  background: linear-gradient(
+    90deg,
+    var(--NEON_GREEN) 0%,
+    var(--NEON_GREEN) var(--PROGRESS_PCT),
+    var(--VERY_DARK_GREY) var(--PROGRESS_PCT),
+    var(--VERY_DARK_GREY) 100%
+  );
+  border: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: var(--SLIDER_THUMB_SIZE);
+  width: var(--SLIDER_THUMB_SIZE);
+  border-radius: 50%;
+  background: var(--ALMOST_WHITE);
+
+  border: 1px solid #ddd;
+  margin-top: var(--THUMB_Y_ADJUST);
+}
+/* input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #008489;
+} */
+
+/* Firefox (Mozilla) */
+input[type="range"]::-moz-range-track {
+  width: var(--SLIDER_WIDTH);
+  height: var(--TRACK_HEIGHT);
+  background: var(--VERY_DARK_GREY);
+  border: none;
+}
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  height: var(--SLIDER_THUMB_SIZE);
+  width: var(--SLIDER_THUMB_SIZE);
+  border-radius: 50%;
+  background: var(--ALMOST_WHITE);
+
+  margin-top: var(--THUMB_Y_ADJUST);
+}
+/* input[type="range"]:focus::-moz-range-track {
+  background: #008489;
+} */
+input[type="range"]::-moz-range-progress {
+  background-color: var(--NEON_GREEN);
+  height: var(--TRACK_HEIGHT);
+}

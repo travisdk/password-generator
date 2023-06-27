@@ -19,7 +19,7 @@ const StrengthIndicator = ({ password }: StrengthIndicatorProps) => {
     <div className="strengthindicator">
       <h3>Strength</h3>
       <div className="strengthbars">
-        {barsOut.map((bar, idx) => (
+        {barsOut.map((_, idx) => (
           <span className="strengthbar" key={idx}>
             |
           </span>

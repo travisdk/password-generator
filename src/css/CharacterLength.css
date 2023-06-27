@@ -1,0 +1,16 @@
+.characterlength-output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.characterlength-caption {
+  font-size: 16px;
+}
+.characterlength-value {
+  font-size: 24px;
+  color: var(--NEON_GREEN);
+}
+.characterlength-slider {
+  width: 100%;
+  margin: 2em 0 4em;
+}

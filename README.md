@@ -85,6 +85,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+https://shiksha-com.medium.com/input-range-slider-e771132468b1
 
 ## Author
 

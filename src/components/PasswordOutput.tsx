@@ -1,5 +1,6 @@
 import { useState } from "react";
 import copyToClipboard from "../utils/copyToClipboard";
+import "../css/PasswordOutput.css";
 
 type PasswordOutputProps = {
   password: string;
@@ -21,8 +22,8 @@ const PasswordOutput = ({ password }: PasswordOutputProps) => {
   return (
     <>
       <button
+        className="password-output-button"
         disabled={password.length === 0}
-        className="password-output"
         onClick={copy}>
         {password.length > 0 ? password : "empty"}
       </button>
