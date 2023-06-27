@@ -76,9 +76,6 @@ input[type="range"]::-webkit-slider-thumb {
   border: 1px solid #ddd;
   margin-top: var(--THUMB_Y_ADJUST);
 }
-/* input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #008489;
-} */
 
 /* Firefox (Mozilla) */
 input[type="range"]::-moz-range-track {
@@ -95,25 +92,8 @@ input[type="range"]::-moz-range-thumb {
   background: var(--ALMOST_WHITE);
   margin-top: var(--THUMB_Y_ADJUST);
 }
-/* input[type="range"]:focus::-moz-range-track {
-  background: #008489;
-} */
+
 input[type="range"]::-moz-range-progress {
   background-color: var(--NEON_GREEN);
   height: var(--TRACK_HEIGHT);
-}
-
-.password-generate-button {
-  width: 100%;
-  height: 56px;
-  background-color: var(--NEON_GREEN);
-  font-family: inherit;
-  font-size: 16px;
-  color: var(--DARK_GREY);
-}
-.arrow {
-  margin-left: 1em;
-}
-.arrow svg {
-  transform: rotate(180deg);
 }

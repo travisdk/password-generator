@@ -21,7 +21,13 @@ const PasswordOutput = ({ password }: PasswordOutputProps) => {
 
   return (
     <div className="password-output">
-      <h2 className="password-output-text" id="password">
+      <h2
+        className={
+          password.length > 0
+            ? "password-output-text"
+            : "password-output-text greyed"
+        }
+        id="password">
         {password.length > 0 ? password : "empty"}
       </h2>
       <div className="password-copied-text-and-button">
