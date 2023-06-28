@@ -33,22 +33,22 @@ const PasswordGenerator = () => {
         <CheckBox
           name="Include Uppercase Letters"
           charRangeSelector={enableUpperCaseLetters}
-          handleChange={(e) => setEnableUpperCaseLetters((prev) => !prev)}
+          handleChange={() => setEnableUpperCaseLetters((prev) => !prev)}
         />
         <CheckBox
           name="Include Lowercase Letters"
           charRangeSelector={enableLowerCaseLetters}
-          handleChange={(e) => setEnableLowerCaseLetters((prev) => !prev)}
+          handleChange={() => setEnableLowerCaseLetters((prev) => !prev)}
         />
         <CheckBox
           name="Include Number"
           charRangeSelector={enableNumerics}
-          handleChange={(e) => setEnableNumerics((prev) => !prev)}
+          handleChange={() => setEnableNumerics((prev) => !prev)}
         />
         <CheckBox
           name="Include Symbols"
           charRangeSelector={enableSymbols}
-          handleChange={(e) => setEnableSymbols((prev) => !prev)}
+          handleChange={() => setEnableSymbols((prev) => !prev)}
         />
         <StrengthIndicator password={currentPassword} />
         <button
