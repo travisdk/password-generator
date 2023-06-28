@@ -11,8 +11,11 @@ const CheckBox = ({ name, charRangeSelector, handleChange }: CheckBoxProps) => {
     <div className="checkbox-and-label">
       <input
         className="custom-checkbox"
+        role="checkbox"
         type="checkbox"
         id={name}
+        aria-checked={charRangeSelector}
+        aria-label={name}
         checked={charRangeSelector}
         onChange={handleChange}
       />

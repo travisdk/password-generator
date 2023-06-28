@@ -24,8 +24,12 @@ const CharacterLength = ({
       <input
         className="characterlength-slider"
         type="range"
+        role="slider"
         min="1"
         max="20"
+        aria-valuemin={1}
+        aria-valuemax={20}
+        aria-value={characterLength}
         value={characterLength}
         style={{ "--PROGRESS_PCT": progressPCT } as React.CSSProperties}
         onChange={handleChange}

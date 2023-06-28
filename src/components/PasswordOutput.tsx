@@ -38,7 +38,10 @@ const PasswordOutput = ({ password }: PasswordOutputProps) => {
         </p>
         <button
           className="password-copy-button"
+          role="button"
           disabled={password.length === 0}
+          aria-disabled={password.length === 0}
+          aria-label="Copy password to clipboard"
           onClick={copy}>
           <svg
             width="21"

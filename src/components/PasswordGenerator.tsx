@@ -53,7 +53,10 @@ const PasswordGenerator = () => {
         <StrengthIndicator password={currentPassword} />
         <button
           className="password-generate-button"
+          role="button"
           disabled={possibleChars.length === 0}
+          aria-disabled={possibleChars.length === 0}
+          aria-label="generate password"
           onClick={() =>
             setCurrentPassword(generatePassword(possibleChars, characterLength))
           }>
