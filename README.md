@@ -57,6 +57,7 @@ https://www.npmjs.com/package/zxcvbn
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- Typescript
 
 ### What I learned
 
